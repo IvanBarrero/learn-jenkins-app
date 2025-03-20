@@ -14,7 +14,7 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
-                    npm ci // like npm install (get node modules, but for a CI server)
+                    npm ci
                     npm run build
                     ls -la
                 '''
