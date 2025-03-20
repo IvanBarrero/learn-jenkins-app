@@ -34,8 +34,8 @@ pipeline {
             steps {
                 sh '''
                     echo "Test stage"
+                    test -f build/$INDEX_FILE_NAME
                 '''
-                    //test -f build/$BUILD_FILE_NAME
                     //npm test
             }
         }
